@@ -12,8 +12,8 @@ const Sidebar = () => {
     <>
       <aside
         className={`${
-          open ? `w-72` : ` w-20 p-4`
-        } duration-300 h-screen bg-secondary relative p-6 py-8`}
+          open ? `w-72` : `w-20 `
+        } duration-300 h-screen bg-secondary relative  p-5  py-8`}
       >
         <svg
           className={`absolute cursor-pointer rounded-full -right-4 top-24 w-8 h-8 border-2 border-secondary bg-white ${
@@ -39,7 +39,7 @@ const Sidebar = () => {
           <img
             src="https://png.pngtree.com/png-vector/20220718/ourmid/pngtree-cashier-icon-vector-concept-contour-png-image_5569410.png"
             alt=""
-            className={`w-10 h-10 text-white cursor-pointer duration-500 `}
+            className={`w-10 h-10 text-white cursor-pointer duration-500`}
           />
           <h1
             className={` text-white origin-left font-medium text-2xl cursor-pointer duration-300 ${
@@ -54,10 +54,10 @@ const Sidebar = () => {
             <li key={index}>
             <a
               href={menu.link}
-              className={`${!open && "hidden"} text-white cursor-pointer duration-500 flex items-center justify-center py-2 rounded-full hover:bg-primary hover:text-black`}
+              className={`${!open && "hidden"} text-white cursor-pointer duration-500 block px-14 py-2 rounded-lg  hover:bg-primary hover:text-black`}
             >
-              <span className={`${!open && "hidden"} duration-200 text-lg`}>
-                {menu.title}
+              <span className={`${!open && "hidden"} duration-200`}>
+              {menu.title}
               </span>
             </a>
           </li>
