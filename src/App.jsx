@@ -1,10 +1,10 @@
-import Sidebar from './components/Sidebar.jsx'
+import { Layout } from './components/Layout.jsx'
 
 function App() {
 
   return (
     <>
-      <Sidebar/>
+      <Layout/>
     </>
   )
 }

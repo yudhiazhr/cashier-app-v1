@@ -12,8 +12,8 @@ const Sidebar = () => {
     <>
       <aside
         className={`${
-          open ? `w-72` : `w-20 `
-        } duration-300 h-screen bg-secondary relative  p-5  py-8`}
+          open ? ` w-80 ` : `w-20 `
+        } duration-300 h-screen bg-secondary fixed md:relative p-5  py-8`}
       >
         <svg
           className={`absolute cursor-pointer rounded-full -right-4 top-24 w-8 h-8 border-2 border-secondary bg-white ${
